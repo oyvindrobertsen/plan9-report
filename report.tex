@@ -1,14 +1,23 @@
-\documentclass[technote]{IEEEtran}
+\documentclass[conference]{IEEEtran}
 \usepackage{cite}
 \usepackage{lipsum}
 \usepackage{todonotes}
 \usepackage[utf8]{inputenc}
 \usepackage{hyperref}
 \usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows, shapes}
 %\usepackage[justification=centering]{caption}
 \setlength{\marginparwidth}{1.3cm}
 
 \begin{document}
+
+\tikzstyle{block} = [draw, fill=white!20, rectangle, 
+    minimum height=3em, minimum width=6em]
+\tikzstyle{sum} = [draw, fill=blue!20, circle, node distance=1cm]
+\tikzstyle{input} = [coordinate]
+\tikzstyle{output} = [coordinate]
+\tikzstyle{pinstyle} = [pin edge={to-,thin,black}]
 
 \title{Reservoir Computing with Cellular Automata and Spiking Neural Networks}
 
@@ -20,8 +29,8 @@
   \IEEEauthorblockA{
     Department of Computer and Information Science\\
     Norwegian University of Science and Technology\\
-    NTNU, 7491 Trondheim, Norway\\
-    \texttt{oyvinrob@stud.ntnu.no}
+    Sem S\ae lands Vei, 7491 Trondheim, Norway\\
+    \href{mailto:oyvinrob@stud.ntnu.no}{\texttt{oyvinrob@stud.ntnu.no}}
   }
 }
 
@@ -33,12 +42,12 @@
 
 \input{introduction}
 \input{background}
-\input{carp}
 \input{methodology}
 \input{results-and-discussion}
+\input{carp}
 \input{conclusion}
 
-%%\bibliographystyle{plain}
-%%\bibliography{bibliography}
+\bibliographystyle{ieeetr}
+\bibliography{Prosjektoppgave}
 
 \end{document}
