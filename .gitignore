@@ -27,3 +27,5 @@ report.pdf
 *.fls
 *.tdo
 *.xml
+
+.DS_Store
